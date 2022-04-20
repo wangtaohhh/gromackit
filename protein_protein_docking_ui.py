@@ -7,7 +7,7 @@ class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
         super().__init__()
         # self.initUI()
         self.setWindowTitle('protein and protein')
-        
+        print(123)
         self.resize(700, 400)
 	
 
