@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel
-import protein_protein_docking_ui
+# import protein_protein_docking_ui
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -25,7 +25,7 @@ class MainWindow(QWidget):
 
         # self.layout.setSpacing(1)
         self.setLayout(self.layout)
-        self.button_1.clicked.connect(protein_protein_docking_ui.ProteinProteinDockingWindow().show)
+        # self.button_1.clicked.connect(protein_protein_docking_ui.ProteinProteinDockingWindow().show)
 
  
 
