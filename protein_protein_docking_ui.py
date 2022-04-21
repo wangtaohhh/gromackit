@@ -17,6 +17,7 @@ class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
         
         self.water_model = PyQt5.QtWidgets.QComboBox()
         self.water_model.addItem('spce')
+        self.water_model.addItem('spc')
         # self.water_model.currentIndexChanged.connect(self.water_model_user_choose)
         self.button_all_in_one = PyQt5.QtWidgets.QPushButton("run simulation")
         
@@ -25,7 +26,7 @@ class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
 
 
         self.setLayout(self.layout)
-        self.button_all_in_one.clicked.connect(self.run_all_in_one(1))
+        self.button_all_in_one.clicked.connect(self.run_all_in_one)
 
     def run_all_in_one(self, protein):
         water_model = self.water_model.currentText()
