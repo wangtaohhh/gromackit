@@ -7,11 +7,17 @@ Running gromacs is really difficult for those who are not keen on CS. So gmxqt i
 run the command below
 
 ```
+git clone https://github.com/wangtaohhh/gromackit.git
 pip install PyQt5
 ```
 if you are from China Mainland, the command may be fit to you
 ```
 pip install PyQt5 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+then you can run by
+
+```
+python mainWindow.py
 ```
 
 ## Attention
