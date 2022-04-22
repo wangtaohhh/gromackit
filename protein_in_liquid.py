@@ -2,12 +2,12 @@ import sys
 import PyQt5.QtWidgets
 import subprocess
 
-class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
+class ProteinInSolvent(PyQt5.QtWidgets.QWidget):
 
     def __init__(self):
         super().__init__()
         # self.initUI()
-        self.setWindowTitle('protein and protein')
+        self.setWindowTitle('protein in solvent')
         self.resize(700, 400)
         
         self.layout = PyQt5.QtWidgets.QHBoxLayout()
@@ -54,7 +54,7 @@ class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
 
 if __name__ == '__main__':
     app = PyQt5.QtWidgets.QApplication(sys.argv)
-    main = ProteinProteinDockingWindow()
+    main = ProteinInSolvent()
     main.show()
     sys.exit(app.exec_())
 
