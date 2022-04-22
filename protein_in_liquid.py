@@ -1,9 +1,6 @@
 import sys
-from tkinter import W
-from turtle import pu
 import PyQt5.QtWidgets
 import subprocess
-
 
 class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
 
@@ -16,8 +13,17 @@ class ProteinProteinDockingWindow(PyQt5.QtWidgets.QWidget):
         self.layout = PyQt5.QtWidgets.QHBoxLayout()
         
         self.water_model = PyQt5.QtWidgets.QComboBox()
-        self.water_model.addItem('spce')
-        self.water_model.addItem('spc')
+        
+        self.water_model.addItems(['none'
+            ,'spc'
+            ,'spce'
+            ,'tip3p'
+            ,'tip4p'
+            ,'tip5p'
+            ,'tips3p'
+            ])
+
+
         self.button_all_in_one = PyQt5.QtWidgets.QPushButton("run simulation")
         
         self.layout.addWidget(self.water_model)
