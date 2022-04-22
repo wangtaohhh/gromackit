@@ -1,7 +1,7 @@
 # gmxqt
 
 ## What is this
-Running gromacs is really difficult for those who are not keen on CS. So gmxqt is created for them.
+Running gromacs is really difficult for those who are not keen on command line. So gmxqt is created for them.
 
 ## Installation
 run the command below
